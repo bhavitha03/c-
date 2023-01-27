@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+class employee
+{
+        int number;
+        char name[20];
+        float IT,da,basic,net_salary;
+        public:
+        void readdata()
+        {
+                cout<<"Enter employee number:"<<endl;
+                cin>>number;
+                cout<<"Enter employee name:"<<endl;
+                cin>>name;
+                cout<<"Enter basicsalary:"<<endl;
+                cin>>basic;
+                cout<<"Enter da:"<<endl;
+                cin>>da;
+                cout<<"Enter IT:"<<endl;
+                cin>>IT;
+                cout<<"Enter netsalary:"<<endl;
+                cin>>net_salary;
+        }
+        void print()
+        {
+                cout<<"Employee number:"<<number<<endl;
+                cout<<"Employee name:"<<name<<endl;
+                cout<<"Basic salary:"<<basic<<endl;
+                cout<<"DA:"<<da<<endl;
+                cout<<"IT:"<<IT<<endl;
+                cout<<"Net salary:"<<net_salary<<endl;
+        }
+};
+int main()
+{
+        employee s;
+        s.readdata();
+        s.print();
+        return 0;
+}
