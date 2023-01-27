@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+class student
+{
+        char name[20];
+        int rollno;
+        char dep[10];
+        public:
+        void readdata()
+        {
+            cout<<"enter name: "<<endl;
+            cin>>name;
+            cout<<"enter roll no: "<<endl;
+            cin>>rollno;
+            cout<<"enter department"<<endl;
+            cin>>dep;
+        }
+        void display()
+        {
+            cout<<"student name: "<<name<<endl;
+            cout<<"roll no: "<<rollno<<endl;
+            cout<<"department: "<<dep<<endl;
+        }
+};
+int main()
+{
+    student s[3];
+    int i;
+    for(i=0;i<3;i++)
+    {
+        cout<<"enter details"<<endl;
+        s[i].readdata();
+    }
+    cout<<"printing details"<<endl;
+    for(i=0;i<3;i++)
+    {
+        s[i].display();
+    }
+}
