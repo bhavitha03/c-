@@ -35,3 +35,12 @@ class employee
                 }
 };
 int main()
+{
+        employee s;
+        s.readdata();
+        s.calculation();
+        s.display();
+        return 0;
+}
+
+
