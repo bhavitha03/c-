@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+struct student
+{
+        char name[20];
+        int rollno;
+        char sec[10];
+};
+int main()
+{
+        struct student s;
+        cout<<"student name: ";
+        cin>>s.name;
+        cout<<"roll no: ";
+        cin>>s.rollno;
+        cout<<"section: ";
+        cin>>s.sec;
+        cout<<"----printing details----"<<endl;
+        cout<<"student name: "<<s.name<<endl;
+        cout<<"roll no: "<<s.rollno<<endl;
+        cout<<"sec: "<<s.sec<<endl;
+}
